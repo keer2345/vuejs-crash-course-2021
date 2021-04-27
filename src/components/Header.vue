@@ -1,0 +1,40 @@
+<template>
+  <header>
+    <h1>{{ title }}</h1>
+    <Button
+      @btn-click="$emit('toggle-add-task')"
+      :text="showAddTask ? 'Hide' : 'Add Task'"
+      :color="showAddTask ? 'red' : 'green'"
+    />
+    <!-- <Button text="Update" color="blue" /> -->
+    <!-- <Button text="Delete" color="red" /> -->
+  </header>
+</template>
+
+<script>
+import Button from "./Button";
+
+export default {
+  name: "Header",
+  props: {
+    title: {
+      type: String,
+      default: "Hello World",
+    },
+    showAddTask: {
+      type: Boolean
+    }
+  },
+  components: {
+    Button,
+  },
+};
+</script>
+<style>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+</style>
