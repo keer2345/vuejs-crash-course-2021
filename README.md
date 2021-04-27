@@ -17,6 +17,12 @@ yarn serve
 yarn build
 ```
 
+### Run f or production
+```
+sudo yarn global add serve
+serve -s dist
+```
+
 ### Lints and fixes files
 ```
 yarn lint
