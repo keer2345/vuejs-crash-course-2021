@@ -17,10 +17,26 @@ yarn serve
 yarn build
 ```
 
-### Run f or production
+### Run for production
 ```
 sudo yarn global add serve
 serve -s dist
+```
+
+### Run json-server for backend
+```
+npm i json-server
+```
+
+*package.json*:
+```
+  "scripts": {
+    // ...
+    "backend": "json-server --watch db.json --port 5000"
+  },
+```
+```
+yarn backend
 ```
 
 ### Lints and fixes files
