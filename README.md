@@ -1,6 +1,6 @@
 # demo01
 
-https://youtu.be/qZXt1Aom3Cs
+- [Vue JS Crash Course 2021](https://youtu.be/qZXt1Aom3Cs)
 
 ## Project setup
 ```
@@ -37,6 +37,10 @@ npm i json-server
 ```
 ```
 yarn backend
+```
+### Vue Router 4
+```
+npm install vue-router@4
 ```
 
 ### Lints and fixes files
